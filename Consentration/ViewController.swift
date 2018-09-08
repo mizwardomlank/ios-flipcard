@@ -56,12 +56,10 @@ class ViewController: UIViewController {
                 // delay for shortime, to show image only
                 
                 // check when you open second card
-                print ("\(firstCardIndex) and \(secondCardIndex)")
                 if firstCard == secondCard {
                     isCardSame = true
                     
                     correctCount += 1
-                    print ("\(correctCount)")
                     if correctCount == 6 {
                         let alert = UIAlertController(title: "Congratulation!", message: "Yey! you did it, you've flipped for \(flipCount) times", preferredStyle: UIAlertControllerStyle.alert)
                         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
