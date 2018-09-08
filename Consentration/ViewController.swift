@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     var flipCount = 0 {
         didSet{
             flipCountLabel.text = "Flips: \(flipCount)"
@@ -93,7 +93,7 @@ class ViewController: UIViewController {
     func flipCard(withEmoji emoticon: String, on button: UIButton){
         
         flipCount += 1
-
+        
         if button.currentTitle == emoticon {
             button.setTitle("", for: UIControlState.normal)
             button.backgroundColor = #colorLiteral(red: 0.2605174184, green: 0.2605243921, blue: 0.260520637, alpha: 1)
@@ -102,7 +102,7 @@ class ViewController: UIViewController {
             button.backgroundColor = #colorLiteral(red: 1, green: 0.4081628051, blue: 0.446774744, alpha: 1)
         }
     }
-
+    
     func shuffled(withItems items : Array<String>) -> Array<String>{
         
         var items = items;
@@ -116,7 +116,7 @@ class ViewController: UIViewController {
             
             items.remove(at: rand)
         }
-
+        
         return shuffled;
     }
 }
