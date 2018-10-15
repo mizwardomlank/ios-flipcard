@@ -1,4 +1,4 @@
-# swift-rollthedices
+# ios flipcard
 
 ![alt text](https://github.com/mizwardomlank/ios-flipcard/blob/master/img/screenshot.png "Screenshot")
 
